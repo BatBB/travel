@@ -9,6 +9,7 @@ a{
 
 ul{
   list-style: none;
+  padding: 0;
 }
 
 body{
@@ -91,6 +92,10 @@ body{
   margin-bottom: 40px;
 }
 
+.preview{
+  padding-bottom: 301px;
+}
+
 .search{
   display: inline-flex;
   align-items: center;
@@ -102,7 +107,7 @@ body{
   background: rgba(255, 255, 255, 0.7);
   border-radius: 16px;
   padding: 0 41px;
-  font-family: 'Aleo';
+  font-family: 'Aleo', serif;
   font-style: italic;
   font-weight: 400;
   font-size: 24px;
@@ -121,3 +126,42 @@ body{
   position: relative;
   left: -250px;
 }
+
+.section-title{
+  font-family: 'Red Hat Text', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 53px;
+  color: #F2785C;
+  text-align: center;
+}
+
+.steps{
+  padding-bottom: 97px;
+}
+
+.steps-title{
+  margin-bottom: 40px;
+}
+
+.steps-list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.steps-item{
+  width: 317px;
+  text-align: center;
+}
+
+.steps-text{
+  font-family: 'Aleo', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #0D606F;
+  margin-top: 30px;
+} 
