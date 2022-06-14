@@ -65,3 +65,59 @@ body{
   height: 41px;
 }
 
+.preview-inner{
+  width: 892px;
+  height: 422px;
+
+}
+
+.preview-title, .preview-text{
+  font-family: 'Aleo', serif;
+  font-weight: 700;
+  color: #fff;
+}
+
+.preview-title{
+  font-style: normal;
+  font-size: 80px;
+  line-height: 96px;
+  margin: 32px 0;
+}
+
+.preview-text{
+  font-style: italic;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 40px;
+}
+
+.search{
+  display: inline-flex;
+  align-items: center;
+}
+
+.input-search{
+  width: 892px;
+  height: 95px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 16px;
+  padding: 0 41px;
+  font-family: 'Aleo';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #F2785C;
+}
+
+.btn-search{
+  width: 228px;
+  height: 59px;
+  font-family: 'Red Hat Text', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  position: relative;
+  left: -250px;
+}
