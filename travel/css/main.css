@@ -191,7 +191,7 @@ body{
   margin: 0 30px 24px;
 }
 
-.btn-dest{
+.btn-dest, .btn-stories{
   width: 228px;
   height: 59px;
   display: flex;
@@ -228,17 +228,25 @@ body{
   background: rgba(255, 255, 255, 0.7);
 }
 
+.stories-title{
+  margin-bottom: 40px;
+}
+
 .stories-inner{
   font-family: 'Aleo', serif;
   font-style: normal;
   font-weight: 400;
   color: #0D606F;
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .story{
   display: flex;
   justify-content: space-between;
-  flex-basis: 760px;
+  /* flex-basis: 760px; */
 }
 
 .story + .story{
@@ -268,4 +276,36 @@ body{
 .spoiler{
   font-weight: 700;
   text-decoration-line: underline;
+}
+
+.btn-stories{
+  margin-top: 40px;
+}
+
+.footer-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+
+}
+
+.footer-text{
+  font-family: 'Red Hat Text', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+.hidden{
+  flex-basis: 140px;
+}
+
+.social-list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-basis: 140px;
 }
