@@ -13,13 +13,16 @@ ul{
 }
 
 body{
-  background: url(../assets/img/background_image1.jpg) no-repeat;
+  background: top url(../assets/img/background_image1.jpg) no-repeat;
+  /* width: 100%; */
   background-size: 100%;
 }
 
 .header{
   background-color: rgba(242, 120, 92, 0.7);
-}
+  /* width: 1440px;
+  margin: 0 auto;
+} */
 
 .container{
   width: 1200px;
@@ -59,6 +62,9 @@ body{
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
   border-radius: 10px;
   color: #fff;
+  font-family: 'Red Hat Text', sans-serif;
+  font-style: normal;
+  font-weight: 500;
 }
 
 .btn-login{
@@ -118,9 +124,6 @@ body{
 .btn-search{
   width: 228px;
   height: 59px;
-  font-family: 'Red Hat Text', sans-serif;
-  font-style: normal;
-  font-weight: 500;
   font-size: 24px;
   line-height: 32px;
   position: relative;
@@ -138,7 +141,7 @@ body{
 }
 
 .steps{
-  padding-bottom: 97px;
+  margin-bottom: 97px;
 }
 
 .steps-title{
@@ -156,6 +159,18 @@ body{
   text-align: center;
 }
 
+.destinations{
+  margin-bottom: 80px;  
+}
+
+.dest-inner{
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
 .steps-text{
   font-family: 'Aleo', serif;
   font-style: normal;
@@ -165,3 +180,47 @@ body{
   color: #0D606F;
   margin-top: 30px;
 } 
+
+.slider-img{
+  display: flex;
+  justify-content: space-around;
+  overflow: hidden;
+}
+
+.dest-img{
+  margin: 0 30px 24px;
+}
+
+.btn-dest{
+  width: 228px;
+  height: 59px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide-dots{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.dot{
+  width: 20px;
+  height: 20px;
+  background: rgba(242, 120, 92, 0.5);
+  border-radius: 50%;
+}
+
+.dot-active{
+  background: #F2785C;
+}
+
+.dot + .dot{
+  margin-left: 10px;
+}
+
+.arrow-right{
+  margin-right: 10px;
+}
+
