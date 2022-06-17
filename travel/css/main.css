@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -48,6 +52,7 @@ body {
 .logo-link {
   width: 216px;
   height: 31px;
+  transition: all .3s;
 }
 
 .nav-list {
@@ -55,6 +60,10 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-right: 40px;
+}
+
+.nav-item:hover {
+  color: #0D606F;
 }
 
 .nav-item + .nav-item {
@@ -69,6 +78,13 @@ body {
   font-family: 'Red Hat Text', sans-serif;
   font-style: normal;
   font-weight: 500;
+  transition: all .3s;
+}
+
+.btn:hover {
+  background: #104852;
+  color: #F2785C;
+
 }
 
 .btn-login {
@@ -288,7 +304,6 @@ body {
 .story {
   display: flex;
   justify-content: space-between;
-  /* flex-basis: 760px; */
 }
 
 .story + .story {
@@ -329,7 +344,6 @@ body {
   justify-content: space-between;
   align-items: center;
   position: relative;
-
 }
 
 .footer-text {
@@ -346,10 +360,18 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-basis: 140px;
+  transition: all .3s;
 }
 
-.rsschool-logo, .github-logo{
+.contact-logo{
   height: 34px;
+  transition: all .3s; 
+}
+
+.contact-logo:hover {
+  height: 34px;
+  background-color: rgba(242, 120, 92, 0.7);;
+  border-radius: 10%;
 }
 
 .social-list {
@@ -357,4 +379,14 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-basis: 140px;
+}
+
+.social-img {
+  transition: all .3s;
+}
+
+.social-img:hover {
+  height: 34px;
+  background-color: #F2785C;
+  border-radius: 40%;
 }
