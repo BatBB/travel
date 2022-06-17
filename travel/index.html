@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -17,38 +17,44 @@
 
   <body>
     <header class="header">
-      <nav class="nav container">
-        <div class="logo">
-          <a href="" class="logo-link">
-            <img
-              src="./assets/logos/logo.png"
-              alt="Logo Travel Portal"
-              class="logo-img"
-            />
-          </a>
-          <ul class="nav-list">
-            <li class="nav-item">
-              <a href="#" class="nav-link">How It Works</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Plan Your Trip</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Destinations</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Travel Stories</a>
-            </li>
-          </ul>
-          <div class="login">
-            <button class="btn btn-login">Login</button>
+      <div class="header-wrapper">
+        <div class="container">
+          <div class="header-inner">
+            <div class="logo">
+              <a href="" class="logo-link">
+                <img
+                  src="./assets/logos/logo.png"
+                  alt="Logo Travel Portal"
+                  class="logo-img"
+                />
+              </a>
+            </div>
+            <nav class="nav">
+              <ul class="nav-list">
+                <li class="nav-item">
+                  <a href="#preview" class="nav-link">How It Works</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#steps" class="nav-link">Plan Your Trip</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#destinations" class="nav-link">Destinations</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#stories" class="nav-link">Travel Stories</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="login">
+              <button class="btn btn-login">Login</button>
+            </div>
           </div>
         </div>
-      </nav>
+      </div>
     </header>
 
     <main class="main">
-      <section class="preview">
+      <section class="preview" id="preview">
         <div class="container">
           <div class="preview-inner">
             <h1 class="preview-title">Explore the beauty of the World</h1>
@@ -56,7 +62,7 @@
               Receive personalized recommendations for countries, hotels,
               activities and more
             </p>
-            <form class="search" action="">
+            <form class="search" action="#">
               <input
                 class="input-search"
                 type="search"
@@ -68,7 +74,7 @@
         </div>
       </section>
 
-      <section class="steps">
+      <section class="steps" id="steps">
         <div class="container">
           <div class="steps-inner">
             <h2 class="steps-title section-title">
@@ -104,7 +110,7 @@
         </div>
       </section>
 
-      <section class="destinations">
+      <section class="destinations" id="destinations">
         <div class="container2">
           <div class="dest-inner">
             <h2 class="dest-title section-title">POPULAR DESTINATIONS</h2>
@@ -134,14 +140,14 @@
         </div>
       </section>
 
-      <section class="stories">
+      <section class="stories" id="stories">
         <div class="container">
           <h2 class="stories-title section-title">TRAVEL STORIES</h2>
           <div class="stories-inner">
             <div class="story">
               <img
                 class="story-img"
-                src="./assets/img/thailand.png"
+                src="./assets/img/thailand.jpg"
                 alt="Beautiful photo the Sea of Thailand"
               />
               <div class="story-text-block">
@@ -163,7 +169,7 @@
             <div class="story">
               <img
                 class="story-img"
-                src="./assets/img/canyonlands.png"
+                src="./assets/img/canyonlands.jpg"
                 alt="Beautiful photo way in canyon"
               />
               <div class="story-text-block">
@@ -185,7 +191,7 @@
             <div class="story">
               <img
                 class="story-img"
-                src="./assets/img/mountains.png"
+                src="./assets/img/mountains.jpg"
                 alt="Beautiful photo snowly mountains"
               />
               <div class="story-text-block">
@@ -207,7 +213,7 @@
             <div class="story">
               <img
                 class="story-img"
-                src="./assets/img/longest.png"
+                src="./assets/img/longest.jpg"
                 alt="Beautiful photo way near mountain"
               />
               <div class="story-text-block">
@@ -240,11 +246,30 @@
     </main>
     <footer class="footer">
       <div class="container footer-container">
-        <div class="hidden"></div>
+        <ul class="contact-list">
+          <li class="contact-item">
+            <a class="contact-link" href="https://rs.school/js/"
+              ><img
+                class="rsschool-logo"
+                src="./assets/logos/rs_school_js.svg"
+                alt=""
+            /></a>
+          </li>
+          <li class="contact-item">
+            <a class="contact-link" href="https://github.com/BatBB"
+              ><img
+                class="github-logo"
+                src="./assets/logos/GitHub-Mark-Light-120px-plus.png"
+                alt=""
+            /></a>
+          </li>
+        </ul>
         <div class="footer-text">All Rights Reserved © Travel Portal</div>
         <ul class="social-list">
           <li class="social-item">
-            <a class="social-link" href="#"
+            <a
+              class="social-link"
+              href="https://www.instagram.com/rsschool_news/"
               ><img
                 class="social-img"
                 src="./assets/logos/icons_instagram-fill.svg"
@@ -252,7 +277,9 @@
             /></a>
           </li>
           <li class="social-item">
-            <a class="social-link" href="#"
+            <a
+              class="social-link"
+              href="https://www.youtube.com/c/RollingScopesSchool"
               ><img
                 class="social-img"
                 src="./assets/logos/icons_video.svg"

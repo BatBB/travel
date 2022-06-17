@@ -1,39 +1,51 @@
-*{
+* {
   box-sizing: border-box;
 }
 
-a{
+a {
   text-decoration: none;
   color: inherit;
 }
 
-ul{
+ul {
   list-style: none;
   padding: 0;
 }
 
-body{
-  background: top url(../assets/img/background_image1.jpg) no-repeat, bottom url(../assets/img/background_image2.jpg) no-repeat;;
+body {
+  /* background: top url(../assets/img/background_image1.jpg) no-repeat, bottom url(../assets/img/background_image2.jpg) no-repeat;; */
   /* width: 100%; */
-  background-size: 100%;
+  /* background-size: 100%; */
 }
 
-.header{
-  background-color: rgba(242, 120, 92, 0.7);
-  /* width: 1440px;
-  margin: 0 auto;*/
+.header {
+  background: url(../assets/img/background_image1.jpg);
+  background-repeat: no-repeat;
+  background-position: center 0;
+  height: 90px;
 } 
 
-.container{
+.header.container{
+}
+
+.header-wrapper{
+  background-color: rgba(242, 120, 92, 0.7);
+  width: 100%;
+  box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
+  z-index: 99;
+}
+
+.container {
   width: 1200px;
   margin: 0 auto;
 }
 
-.logo{
+
+.header-inner {
+  height: 90px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 90px;
   font-family: 'Red Hat Text', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -42,22 +54,25 @@ body{
   color: #FFFFFF;
 }
 
-.logo-link{
+.logo-link {
   width: 216px;
   height: 31px;
 }
 
-.nav-list{
+.nav-list {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-right: 40px;
 }
 
-.nav-item + .nav-item{
+.nav-item + .nav-item {
   margin-left: 42px;
 }
 
-.btn{
+
+
+.btn {
   background: #0D606F;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
   border-radius: 10px;
@@ -67,47 +82,52 @@ body{
   font-weight: 500;
 }
 
-.btn-login{
+.btn-login {
   width: 103px;
   height: 41px;
 }
 
-.preview-inner{
+.preview {
+  padding-bottom: 301px;
+  background: url(../assets/img/background_image1.jpg);
+  background-repeat: no-repeat;
+  background-position: center -90px;
+  padding: 33px 0;
+  height: 765px;
+}
+
+.preview-inner {
   width: 892px;
   height: 422px;
-
 }
 
-.preview-title, .preview-text{
-  font-family: 'Aleo', serif;
+.preview-title, .preview-text {
+  font-family: 'Aleo';
   font-weight: 700;
   color: #fff;
+  font-family: 'Aleo';
 }
 
-.preview-title{
+.preview-title {
   font-style: normal;
   font-size: 80px;
   line-height: 96px;
-  margin: 32px 0;
+  margin: 0 0 30px;
 }
 
-.preview-text{
+.preview-text {
   font-style: italic;
   font-size: 20px;
   line-height: 24px;
-  margin-bottom: 40px;
+  margin-bottom: 46px;
 }
 
-.preview{
-  padding-bottom: 301px;
-}
-
-.search{
+.search {
   display: inline-flex;
   align-items: center;
 }
 
-.input-search{
+.input-search {
   width: 892px;
   height: 95px;
   background: rgba(255, 255, 255, 0.7);
@@ -121,16 +141,16 @@ body{
   color: #F2785C;
 }
 
-.btn-search{
+.btn-search {
   width: 228px;
   height: 59px;
   font-size: 24px;
   line-height: 32px;
   position: relative;
-  left: -250px;
+  left: -246px;
 }
 
-.section-title{
+.section-title {
   font-family: 'Red Hat Text', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -140,30 +160,30 @@ body{
   text-align: center;
 }
 
-.steps{
+.steps {
   margin-bottom: 97px;
 }
 
-.steps-title{
+.steps-title {
   margin-bottom: 40px;
 }
 
-.steps-list{
+.steps-list {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.steps-item{
+.steps-item {
   width: 317px;
   text-align: center;
 }
 
-.destinations{
+.destinations {
   margin-bottom: 80px;  
 }
 
-.dest-inner{
+.dest-inner {
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -171,7 +191,7 @@ body{
   align-items: center;
 }
 
-.steps-text{
+.steps-text {
   font-family: 'Aleo', serif;
   font-style: normal;
   font-weight: 400;
@@ -181,17 +201,17 @@ body{
   margin-top: 30px;
 } 
 
-.slider-img{
+.slider-img {
   display: flex;
   justify-content: space-around;
   overflow: hidden;
 }
 
-.dest-img{
+.dest-img {
   margin: 0 30px 24px;
 }
 
-.btn-dest, .btn-stories{
+.btn-dest, .btn-stories {
   width: 228px;
   height: 59px;
   display: flex;
@@ -199,40 +219,40 @@ body{
   align-items: center;
 }
 
-.slide-dots{
+.slide-dots {
   display: flex;
   justify-content: center;
   margin-bottom: 40px;
 }
 
-.dot{
+.dot {
   width: 20px;
   height: 20px;
   background: rgba(242, 120, 92, 0.5);
   border-radius: 50%;
 }
 
-.dot-active{
+.dot-active {
   background: #F2785C;
 }
 
-.dot + .dot{
+.dot + .dot {
   margin-left: 10px;
 }
 
-.arrow-right{
+.arrow-right {
   margin-right: 10px;
 }
 
-.stories{
+.stories {
   background: rgba(255, 255, 255, 0.7);
 }
 
-.stories-title{
+.stories-title {
   margin-bottom: 40px;
 }
 
-.stories-inner{
+.stories-inner {
   font-family: 'Aleo', serif;
   font-style: normal;
   font-weight: 400;
@@ -243,17 +263,17 @@ body{
   flex-direction: column;
 }
 
-.story{
+.story {
   display: flex;
   justify-content: space-between;
   /* flex-basis: 760px; */
 }
 
-.story + .story{
+.story + .story {
   margin-top: 30px;
 }
 
-.story-img{
+.story-img {
   width: 400px;
   height: 250px;
   filter: drop-shadow(0px 4px 4px #0D606F);
@@ -261,28 +281,28 @@ body{
   margin-right: 40px;
 }
 
-.story-title{
+.story-title {
   font-size: 35px;
   line-height: 42px;
   margin: 0 0 24px;
 }
 
-.story-text{
+.story-text {
   font-size: 20px;
   line-height: 24px;
   margin: 0;
 }
 
-.spoiler{
+.spoiler {
   font-weight: 700;
   text-decoration-line: underline;
 }
 
-.btn-stories{
+.btn-stories {
   margin-top: 40px;
 }
 
-.footer-container{
+.footer-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -290,7 +310,7 @@ body{
 
 }
 
-.footer-text{
+.footer-text {
   font-family: 'Red Hat Text', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -299,11 +319,18 @@ body{
   color: #FFFFFF;
 }
 
-.hidden{
+.contact-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   flex-basis: 140px;
 }
 
-.social-list{
+.rsschool-logo, .github-logo{
+  height: 34px;
+}
+
+.social-list {
   display: flex;
   justify-content: space-between;
   align-items: center;
