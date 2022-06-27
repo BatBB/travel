@@ -37,6 +37,11 @@ body {
   margin: 0 auto;
 }
 
+.container2 {
+  width: 1440px;
+  margin: 0 auto;
+}
+
 .header-inner {
   height: 90px;
   display: flex;
@@ -203,9 +208,7 @@ body {
   margin-bottom: 80px;  
 }
 
-.container2 {
-  width: 1440px;
-  margin: 0 auto;
+.destinations__container {
   overflow: hidden;
 }
 
@@ -363,6 +366,7 @@ body {
   align-items: center;
   flex-basis: 140px;
   transition: all .3s;
+  margin: 12px 0;
 }
 
 .contact-logo{
@@ -381,6 +385,7 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-basis: 140px;
+  margin: 12px 0;
 }
 
 .social-img {
