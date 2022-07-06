@@ -497,16 +497,16 @@ body {
 
 .destinations__container {
   overflow: hidden;
+  margin: 0 -15px;
 }
 
 .destinations {
-  margin-bottom: 80px;  
+  /* margin-bottom: 80px;   */
   padding: 0 15px;
 }
 
 .dest-inner {
   margin: 0 15px;
-  margin: 0 auto;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -551,7 +551,8 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 24px;
-  line-height: 32px;
+  line-height: 145.83%; /* 32px; */
+  margin-bottom: 80px;
 }
 
 .slide-dots {
@@ -688,10 +689,11 @@ body {
 
 .stories {
   background: rgba(255, 255, 255, 0.7);
+  padding: 0 15px;
 }
 
 .stories-title {
-  margin-bottom: 40px;
+  margin: 0 0 80px 0;
 }
 
 .stories-inner {
@@ -699,38 +701,35 @@ body {
   font-style: normal;
   font-weight: 400;
   color: #0D606F;
-  padding: 40px 0;
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin: 0 -15px;
 }
 
 .story {
   display: flex;
-  justify-content: space-between;
 }
-
 .story + .story {
-  margin-top: 30px;
+  margin-top: 27px;
 }
-
-.story-img {
-  width: 400px;
-  height: 250px;
-  filter: drop-shadow(0px 4px 4px #0D606F);
-  border-radius: 16px;
+.story-img-block {
+  max-width: 400px;
   margin-right: 40px;
 }
-
+.story-img {
+  filter: drop-shadow(0px 4px 4px #0D606F);
+  border-radius: 16px;
+}
 .story-title {
   font-size: 35px;
-  line-height: 42px;
+  line-height: 120%; /* 42px; */
   margin: 0 0 24px;
 }
 
 .story-text {
   font-size: 20px;
-  line-height: 24px;
+  line-height: 120%; /* 24px; */
   margin: 0;
 }
 
@@ -740,18 +739,53 @@ body {
 }
 
 .btn-stories {
-  margin-top: 40px;
+  margin-top: 33px;
+  padding: 9px 34px;
 }
 
 @media (max-width: 840px) {
+  .story-img {
+    width: 300px;
+  }
+  .story-img-block {
+    margin-right: 20px;
+  }
+  .story-title {
+    font-size: 20px;
+    margin: 0 0 15px;
+  }
+  
+  .story-text {
+    font-size: 16px;
+  }
+  
 }
 @media (max-width: 640px) {
+  .stories-title {
+    margin-bottom: 30px;
+  }
+  .story-img-block {
+  
+  }
+  .story-img{
+    width: 220px;
+  }
   .btn {
     font-size: 20px;
   }
   
 }
 @media (max-width: 550px) {
+  .story-title {
+    font-size: 15px;
+    margin: 0 0 15px;
+  }
+  .story-text {
+    font-size: 12px;
+  }
+  .hidetext {
+    display: none;
+  }
   .btn {
     font-size: 18px;
   }
@@ -762,6 +796,60 @@ body {
   }
 }
 @media (max-width: 390px){
+  .stories-title {
+    margin-bottom: 20px;
+  }
+  .stories-inner {
+    padding: 0;
+    margin: 0 -10px;
+  }
+  .story {
+
+  }
+  .story + .story {
+    margin-top: 15px;
+  }
+  .story-img-block {
+    min-width: 155px;
+    height: 130px;
+    border-radius: 16px;
+    filter: drop-shadow(0px 4px 4px #0D606F);
+    margin-right: 10px;
+  }
+  .story01 {
+    background-image: url(../assets/img/thailand-390.jpg);
+  }
+  .story02 {
+    background-image: url(../assets/img/canyonlands-390.jpg);
+  }
+  .story03 {
+    background-image: url(../assets/img/mountains-390.jpg);
+  }
+  .story04 {
+    background-image: url(../assets/img/longest-390.jpg);
+  }
+  .story-img {
+    display: none;
+  }
+  .story-text-block {
+
+  }
+  .story-title {
+    font-size: 11px;
+    line-height: 118.18%; /* 13px; */
+    font-weight: 700;
+    margin-top: 7px;
+    margin-bottom: 10px;
+
+  }
+  .story-text {
+    font-size: 9px;
+    line-height: 122.22%;
+  }
+  .btn-stories {
+    margin: 11px 0 13px 0;
+    padding: 7.5px 13.5px;
+  }
   .btn {
     font-size: 11px;
     line-height: 136.36%;
