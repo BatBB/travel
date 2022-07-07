@@ -14,11 +14,12 @@ a {
 ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 body {
-  background: top url(../assets/img/background_image1.jpg) no-repeat;
-  /* , bottom url(../assets/img/background_image2.jpg) no-repeat */
+  background: top url(../assets/img/background_image1.jpg) no-repeat, bottom url(../assets/img/background_image2.jpg) no-repeat;
+  
   background-size: auto;
 }
 
@@ -167,8 +168,8 @@ body {
 }
 @media (max-width: 390px) {
   body {
-    background: top url(../assets/img/background_image1_390px.jpg) no-repeat;
-    /* , bottom url(../assets/img/background_image2_390px.jpg) no-repeat; */
+    background: top url(../assets/img/background_image1_390px.jpg) no-repeat, bottom url(../assets/img/background_image2_390px.jpg) no-repeat;
+    /* */
   }
   .container {
     max-width: 360px;
@@ -693,7 +694,7 @@ body {
 }
 
 .stories-title {
-  margin: 0 0 80px 0;
+  margin: 0 0 85px 0;
 }
 
 .stories-inner {
@@ -711,7 +712,7 @@ body {
   display: flex;
 }
 .story + .story {
-  margin-top: 27px;
+  margin-top: 25px;
 }
 .story-img-block {
   max-width: 400px;
@@ -724,6 +725,7 @@ body {
 .story-title {
   font-size: 35px;
   line-height: 120%; /* 42px; */
+  line-height: 1;
   margin: 0 0 24px;
 }
 
@@ -741,6 +743,7 @@ body {
 .btn-stories {
   margin-top: 33px;
   padding: 9px 34px;
+  margin-bottom: 41px;
 }
 
 @media (max-width: 840px) {
@@ -860,11 +863,16 @@ body {
     margin-right: 6px;
   }
 }
-.footer-container {
+.footer {
+  padding: 0 15px;
+}
+.footer-inner {
+  height: 61px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
+  margin: 0 -15px;
 }
 
 .footer-text {
@@ -901,6 +909,9 @@ body {
   align-items: center;
   flex-basis: 140px;
 }
+.social-item {
+  height: 34px;
+}
 
 .social-img {
   transition: all .3s;
@@ -910,4 +921,20 @@ body {
   height: 34px;
   background-color: #F2785C;
   border-radius: 40%;
+}
+@media (max-width: 600px) {
+  .footer-inner {
+    justify-content: center;
+  }
+  .contact-list,
+  .footer-text {
+    display: none;
+  }
+}
+
+
+@media (max-width: 390px) {
+  .social-list {
+    margin-left: 8px;
+  }
 }
