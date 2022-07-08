@@ -22,6 +22,7 @@
   </head>
 
   <body>
+    <div class="overlay"></div>
     <header class="header container2">
       <div class="header-wrapper">
         <div class="container">
@@ -41,6 +42,8 @@
               </a>
             </div>
             <nav class="nav">
+              <div class="menu-burger-close">
+              </div>
               <ul class="nav-list">
                 <li class="nav-item">
                   <a href="#preview" class="nav-link">How It Works</a>
@@ -54,12 +57,16 @@
                 <li class="nav-item">
                   <a href="#stories" class="nav-link">Travel Stories</a>
                 </li>
+                <li class="nav-item item-hide">
+                  <a href="#" class="nav-link">Account</a>
+                </li>
+                <li class="nav-item item-hide">
+                  <a href="#social" class="nav-link">Social Media</a>
+                </li>
               </ul>
             </nav>
-            <div class="menu__btn">
-              <span></span>
-              <span></span>
-              <span></span>
+            <div class="menu-burger">
+              <span class="line"></span>
             </div>
             <div class="login">
               <button class="btn btn-login">Login</button>
@@ -327,7 +334,7 @@
             </li>
           </ul>
           <div class="footer-text">All Rights Reserved © Travel Portal</div>
-          <ul class="social-list">
+          <ul class="social-list" id="social">
             <li class="social-item">
               <a
                 class="social-link"
