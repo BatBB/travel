@@ -22,6 +22,7 @@
   </head>
 
   <body>
+    <div class="overlay"></div>
     <header class="header container2">
       <div class="header-wrapper">
         <div class="container">
@@ -29,13 +30,20 @@
             <div class="logo">
               <a href="" class="logo-link">
                 <img
-                  src="./assets/logos/logo.png"
+                  src="./assets/logos/logo_min.png"
                   alt="Logo Travel Portal"
-                  class="logo-img"
+                  class="logo-link__img"
+                />
+                <img
+                  src="./assets/logos/logo_text.png"
+                  alt="Logo Travel Portal"
+                  class="logo-link__text"
                 />
               </a>
             </div>
             <nav class="nav">
+              <div class="menu-burger-close">
+              </div>
               <ul class="nav-list">
                 <li class="nav-item">
                   <a href="#preview" class="nav-link">How It Works</a>
@@ -49,8 +57,17 @@
                 <li class="nav-item">
                   <a href="#stories" class="nav-link">Travel Stories</a>
                 </li>
+                <li class="nav-item item-hide">
+                  <a href="#" class="nav-link">Account</a>
+                </li>
+                <li class="nav-item item-hide">
+                  <a href="#social" class="nav-link">Social Media</a>
+                </li>
               </ul>
             </nav>
+            <div class="menu-burger">
+              <span class="line"></span>
+            </div>
             <div class="login">
               <button class="btn btn-login">Login</button>
             </div>
@@ -68,14 +85,16 @@
               Receive personalized recommendations for countries, hotels,
               activities and more
             </p>
-            <form class="search" action="#">
-              <input
-                class="input-search"
-                type="search"
-                placeholder="What would you like to do?"
-              />
-              <button class="btn btn-search">Start Planning</button>
-            </form>
+            <div class="search-form">
+              <form class="search" action="#">
+                <input
+                  class="input-search"
+                  type="search"
+                  placeholder="What would you like to do?"
+                />
+                <button class="btn btn-search">Start Planning</button>
+              </form>
+            </div>
           </div>
         </div>
       </section>
@@ -93,9 +112,11 @@
                   alt="Image bike"
                   class="steps-img"
                 />
-                <p class="steps-text">Tell us what you want to do</p>
+                <p class="steps-text first-item-text">
+                  Tell us what you want to do
+                </p>
               </li>
-              <li class="steps-item">
+              <li class="steps-item second-item">
                 <img
                   src="./assets/img/steps-calen.svg"
                   alt="Image calendar"
@@ -103,7 +124,7 @@
                 />
                 <p class="steps-text">Share us preferable dates</p>
               </li>
-              <li class="steps-item">
+              <li class="steps-item third-item">
                 <img
                   src="./assets/img/steps-fly.svg"
                   alt="Image fly"
@@ -115,13 +136,14 @@
           </div>
         </div>
       </section>
+    
+      <section class="destinations container2" id="destinations">
+        <div class="destinations__container">
 
-      <section class="destinations" id="destinations">
-        <div class="destinations__container container2">
           <div class="dest-inner">
             <h2 class="dest-title section-title">POPULAR DESTINATIONS</h2>
             <div class="slider">
-              <div class="slider-img">
+              <div class="slider-img first-slider">
                 <img
                   class="dest-img"
                   src="./assets/img/slider-img1.jpg"
@@ -129,7 +151,7 @@
                 />
                 <div class="slider-img-text">Spain</div>
               </div>
-              <div class="slider-img">
+              <div class="slider-img second-slider">
                 <img
                   class="dest-img"
                   src="./assets/img/slider-img2.jpg"
@@ -137,7 +159,7 @@
                 />
                 <div class="slider-img-text">Japan</div>
               </div>
-              <div class="slider-img">
+              <div class="slider-img third-slider">
                 <img
                   class="dest-img"
                   src="./assets/img/slider-img3.jpg"
@@ -146,15 +168,19 @@
                 <div class="slider-img-text">USA</div>
               </div>
             </div>
+            <div class="arrows">
+              <div class="left-arrow arrow"></div>
+              <div class="right-arrow arrow"></div>
+            </div>
             <div class="slide-dots">
-              <div class="dot"></div>
+              <div class="dot dot-active-390"></div>
               <div class="dot dot-active"></div>
               <div class="dot"></div>
             </div>
             <button class="btn btn-dest">
               <img
-                class="arrow-right"
-                src="./assets/img/arrow-right.svg"
+                class="btn-arrow-right"
+                src="./assets/img/btn-arrow-right.svg"
                 alt="Arrow right"
               />
               <span>Find More</span>
@@ -168,11 +194,13 @@
           <h2 class="stories-title section-title">TRAVEL STORIES</h2>
           <div class="stories-inner">
             <div class="story">
-              <img
-                class="story-img"
-                src="./assets/img/thailand.jpg"
-                alt="Beautiful photo the Sea of Thailand"
-              />
+              <div class="story-img-block story01">
+                <img
+                  class="story-img"
+                  src="./assets/img/thailand.jpg"
+                  alt="Beautiful photo the Sea of Thailand"
+                />
+              </div>
               <div class="story-text-block">
                 <h3 class="story-title">10 Photos of Attractive Thailand</h3>
                 <p class="story-text">
@@ -181,20 +209,25 @@
                   Ut enim ad minim veniam, quis nostrud exercitation ullamco
                   laboris nisi ut aliquip ex ea commodo consequat. Duis aute
                   irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum.Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit...
+                  dolore eu fugiat nulla pariatur. Excepteur sint<span
+                    class="hidetext"
+                  >
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.Lorem ipsum dolor sit
+                    amet, consectetur adipiscing elit</span
+                  >...
                   <span class="spoiler">Read More</span>
                 </p>
               </div>
             </div>
             <div class="story">
-              <img
-                class="story-img"
-                src="./assets/img/canyonlands.jpg"
-                alt="Beautiful photo way in canyon"
-              />
+              <div class="story-img-block story02">
+                <img
+                  class="story-img"
+                  src="./assets/img/canyonlands.jpg"
+                  alt="Beautiful photo way in canyon"
+                />
+              </div>
               <div class="story-text-block">
                 <h3 class="story-title">Canyonlands National Park, Utah</h3>
                 <p class="story-text">
@@ -203,20 +236,25 @@
                   Ut enim ad minim veniam, quis nostrud exercitation ullamco
                   laboris nisi ut aliquip ex ea commodo consequat. Duis aute
                   irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum.Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit...
+                  dolore eu fugiat nulla pariatur. Excepteur sint<span
+                    class="hidetext"
+                  >
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.Lorem ipsum dolor sit
+                    amet, consectetur adipiscing elit</span
+                  >...
                   <span class="spoiler">Read More</span>
                 </p>
               </div>
             </div>
             <div class="story">
-              <img
-                class="story-img"
-                src="./assets/img/mountains.jpg"
-                alt="Beautiful photo snowly mountains"
-              />
+              <div class="story-img-block story03">
+                <img
+                  class="story-img"
+                  src="./assets/img/mountains.jpg"
+                  alt="Beautiful photo snowly mountains"
+                />
+              </div>
               <div class="story-text-block">
                 <h3 class="story-title">I left my heart in the Mountains!</h3>
                 <p class="story-text">
@@ -225,20 +263,25 @@
                   Ut enim ad minim veniam, quis nostrud exercitation ullamco
                   laboris nisi ut aliquip ex ea commodo consequat. Duis aute
                   irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum.Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit...
+                  dolore eu fugiat nulla pariatur. Excepteur sint<span
+                    class="hidetext"
+                  >
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.Lorem ipsum dolor sit
+                    amet, consectetur adipiscing elit</span
+                  >...
                   <span class="spoiler">Read More</span>
                 </p>
               </div>
             </div>
             <div class="story">
-              <img
-                class="story-img"
-                src="./assets/img/longest.jpg"
-                alt="Beautiful photo way near mountain"
-              />
+              <div class="story-img-block story04">
+                <img
+                  class="story-img"
+                  src="./assets/img/longest.jpg"
+                  alt="Beautiful photo way near mountain"
+                />
+              </div>
               <div class="story-text-block">
                 <h3 class="story-title">The Longest journey in my life!</h3>
                 <p class="story-text">
@@ -247,18 +290,21 @@
                   Ut enim ad minim veniam, quis nostrud exercitation ullamco
                   laboris nisi ut aliquip ex ea commodo consequat. Duis aute
                   irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum.Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit...
+                  dolore eu fugiat nulla pariatur. Excepteur sint<span
+                    class="hidetext"
+                  >
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.Lorem ipsum dolor sit
+                    amet, consectetur adipiscing elit</span
+                  >...
                   <span class="spoiler">Read More</span>
                 </p>
               </div>
             </div>
             <button class="btn btn-stories">
               <img
-                class="arrow-right"
-                src="./assets/img/arrow-right.svg"
+                class="btn-arrow-right"
+                src="./assets/img/btn-arrow-right.svg"
                 alt="Arrow right"
               />
               <span>See More</span>
@@ -268,56 +314,58 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container footer-container">
-        <ul class="contact-list">
-          <li class="contact-item">
-            <a class="contact-link" href="https://rs.school/js-stage0/"
-              ><img
-                class="contact-logo"
-                src="./assets/logos/rs_school_js.svg"
-                alt=""
-            /></a>
-          </li>
-          <li class="contact-item">
-            <a class="contact-link" href="https://github.com/BatBB"
-              ><img
-                class="contact-logo"
-                src="./assets/logos/GitHub-Mark-Light-120px-plus.png"
-                alt=""
-            /></a>
-          </li>
-        </ul>
-        <div class="footer-text">All Rights Reserved © Travel Portal</div>
-        <ul class="social-list">
-          <li class="social-item">
-            <a
-              class="social-link"
-              href="https://www.instagram.com/rsschool_news/"
-              ><img
-                class="social-img"
-                src="./assets/logos/icons_instagram-fill.svg"
-                alt="Instagram logo"
-            /></a>
-          </li>
-          <li class="social-item">
-            <a
-              class="social-link"
-              href="https://www.youtube.com/c/RollingScopesSchool"
-              ><img
-                class="social-img"
-                src="./assets/logos/icons_video.svg"
-                alt="Video logo"
-            /></a>
-          </li>
-          <li class="social-item">
-            <a class="social-link" href="https://twitter.com/rollingscopes"
-              ><img
-                class="social-img"
-                src="./assets/logos/icons_twitter-fill.svg"
-                alt="Twitter logo"
-            /></a>
-          </li>
-        </ul>
+      <div class="container">
+        <div class="footer-inner">
+          <ul class="contact-list">
+            <li class="contact-item">
+              <a class="contact-link" href="https://rs.school/js-stage0/"
+                ><img
+                  class="contact-logo"
+                  src="./assets/logos/rs_school_js.svg"
+                  alt=""
+              /></a>
+            </li>
+            <li class="contact-item">
+              <a class="contact-link" href="https://github.com/BatBB"
+                ><img
+                  class="contact-logo"
+                  src="./assets/logos/GitHub-Mark-Light-120px-plus.png"
+                  alt=""
+              /></a>
+            </li>
+          </ul>
+          <div class="footer-text">All Rights Reserved © Travel Portal</div>
+          <ul class="social-list" id="social">
+            <li class="social-item">
+              <a
+                class="social-link"
+                href="https://www.instagram.com/rsschool_news/"
+                ><img
+                  class="social-img"
+                  src="./assets/logos/icons_instagram-fill.svg"
+                  alt="Instagram logo"
+              /></a>
+            </li>
+            <li class="social-item">
+              <a
+                class="social-link"
+                href="https://www.youtube.com/c/RollingScopesSchool"
+                ><img
+                  class="social-img"
+                  src="./assets/logos/icons_video.svg"
+                  alt="Video logo"
+              /></a>
+            </li>
+            <li class="social-item">
+              <a class="social-link" href="https://twitter.com/rollingscopes"
+                ><img
+                  class="social-img"
+                  src="./assets/logos/icons_twitter-fill.svg"
+                  alt="Twitter logo"
+              /></a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
     <script src="./scripts/index.js"></script>
