@@ -991,6 +991,7 @@ body {
   align-items: center;
   flex-basis: 140px;
   transition: all .3s;
+  margin: 12px 0;
 }
 
 .contact-logo{
@@ -1009,6 +1010,7 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-basis: 140px;
+  margin: 12px 0;
 }
 .social-item {
   height: 34px;
